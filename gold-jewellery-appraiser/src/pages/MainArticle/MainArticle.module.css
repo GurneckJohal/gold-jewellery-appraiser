@@ -1,0 +1,54 @@
+.article {
+    margin: 1rem 2rem 1rem;
+    padding: 1rem 2rem 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    border-color: black;
+    box-shadow: var(--glow);
+}
+
+.redirect {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+
+.redirect h1 {
+    font-weight: bolder;
+    margin: 1rem;
+}
+
+.redirect button {
+    background-color: transparent;
+    padding: 0.5rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    color: var(--white);
+
+    &:hover {
+        border-color: var(--gold);
+    }
+}
+
+.factors {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.factor {
+    padding-top: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--glow);
+    color: var(--white);
+}
+
+.icon {
+    fill: var(--gold);
+    fill-rule: evenodd;
+    width: 50%;
+    height: auto;
+}
