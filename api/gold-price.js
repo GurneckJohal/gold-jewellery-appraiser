@@ -3,12 +3,12 @@
 async function getGoldPrice() {
 
     const response = await fetch(
-        "",
-        {
-            headers: {
-                Authorization: `Bearer ${process.env.METALS_API_KEY}`
-            }
-        }
+      "https://api.metalpriceapi.com/v1/latest?base=CAD&currencies=XAU",
+      {
+        headers: {
+          "X-API-KEY": process.env.METALS_API_KEY,
+        },
+      }
     );
 
     if (!response.ok) {
